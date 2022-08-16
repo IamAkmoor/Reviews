@@ -1,0 +1,99 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #ddcbff;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+.main-txt {
+    font-size: 34px;
+    color: #1f123a;
+}
+.underline {
+    background-color: #8a2be2;
+    height: 4px;
+    width: 80px;
+    border-radius: 4px;
+}
+.review-wrapper {
+    margin-top: 3rem;
+    text-align: center;
+    background-color: white;
+    width: 45%;
+    border-radius: 20px;
+    box-shadow: -4px 6px 35px 15px rgba(155,142,142,0.78);
+    line-height: 1.5rem;
+}
+.img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 2rem auto;
+    margin-bottom: 1.5rem;
+}
+
+.img-container::after {
+    font-family: "Font Awesome 5 Free";
+    content: open-quote;
+    position: absolute;
+    top: 0;
+    right: 110px;
+    transform: translateY(20%);
+    width: auto;
+    height: 7px;
+    font-size: 80px;
+    background-color: #8a2be2;
+    color: white;
+    padding: 27px 3px  7px;
+    border-radius: 50%;
+    place-items: center;
+    display: grid;
+    place-items: center;
+}
+.img-container::before {
+    box-sizing: border-box;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #8a2be2;
+    position: absolute;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
+}
+#person-img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+}
+#job {
+    color: #8a2be2;
+    text-transform: uppercase;
+}
+#info {
+    margin: 2rem;
+    font-size: large;
+    color: #1f123a;
+}
+
+button {
+    margin-bottom: 1rem;
+    color: #8a2be2;
+    font-size: large;
+    background-color: #ddcbff;
+    padding: 5px;
+    border: #6b32dc 1px solid;
+    border-radius: 5px;
+}
